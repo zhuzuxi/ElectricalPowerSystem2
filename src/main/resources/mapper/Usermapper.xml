@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+namespace：命名空间，用来绑定接口，填写对应接口的全限定类型（包名+类名）
+目的：通过全限定类名，使用反射原理获取接口
+-->
+<mapper namespace="com.example.electricalpowersystem2.dao.userDao">
+    <select id="inQuery" resultType="com.example.electricalpowersystem2.entity.User">
+        select * from user where id in
+        <foreach collection="collection" open="(" close=")" separator="," item="id">
+            #{id}
+        </foreach>
+    </select>
+</mapper>
