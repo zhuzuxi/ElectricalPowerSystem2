@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+namespace：命名空间，用来绑定接口，填写对应接口的全限定类型（包名+类名）
+目的：通过全限定类名，使用反射原理获取接口
+-->
+<mapper namespace="com.example.electricalpowersystem2.dao.user8companyDao">
+
+<!--    <select id="OntToMany" resultMap="">-->
+<!--        select-->
+<!--            c.id cid,-->
+<!--            c.name name,-->
+<!--            c.address address,-->
+<!--            u.id id,-->
+<!--            u.username username,-->
+<!--            u.password password,-->
+<!--            u.gender gender,-->
+<!--            u.birthday birthday,-->
+<!--            u.phone phone,-->
+<!--            u.cid cid-->
+<!--        from user as u,company as c-->
+<!--        where c.id=u.id and c.id=#{cid}-->
+<!--    </select>-->
+
+</mapper>

@@ -1,9 +1,8 @@
 package com.example.electricalpowersystem2.dao;
 
+import com.alibaba.druid.sql.visitor.functions.If;
 import com.example.electricalpowersystem2.entity.User;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
@@ -20,6 +19,15 @@ public interface userDao {
     public List<User> likeQuery(@Param("username")String username);
 
     public List<User> inQuery(List<Integer> ids);
+
+    @Delete("delete from user where id=#{uid}")
+    public int del(int uid);
+
+//    @Insert("insert into user()")
+
+//    @Update("")
+
+
 
 
 }

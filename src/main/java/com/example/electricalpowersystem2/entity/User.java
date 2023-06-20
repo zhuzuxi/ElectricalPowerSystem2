@@ -14,6 +14,8 @@ public class User {
     private Date birthday;
     private String phone;
 
+    private int cid;
+
 
 
 }
